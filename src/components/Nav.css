@@ -1,0 +1,22 @@
+#nav {
+    background-color: #FFCA41;
+    height: 10vh;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+#circle{
+    border-radius: 50%;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+}
+
+#nav a{
+    background-color: white;
+    border: none;
+    padding: 0;
+}

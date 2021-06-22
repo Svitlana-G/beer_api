@@ -1,0 +1,33 @@
+.ersteSeite{
+    margin: 10vh 5%;
+}
+
+.picture{
+    height: 50vh;
+}
+
+#rand{
+    margin-top: 15vh;
+    background: url(../img/random.jpeg) center / cover no-repeat;
+}
+#all {
+    background: url(../img/alle.jpeg) center / cover no-repeat;
+}
+
+h1{
+    background-color: #FFCA41;
+    padding: 2vh;
+    margin-top: 0;
+    color: white;
+    font-size: 2rem;
+}
+
+p{
+    line-height: 24px;
+}
+
+.ersteSeite a{
+    background-color: white;
+    border: none;
+    padding: 0;
+}

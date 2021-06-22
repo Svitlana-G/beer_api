@@ -1,0 +1,16 @@
+.flex-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.single{
+    margin: 4vh 10%;
+}
+
+.flex-row div{
+    color: rgba(51, 51, 51, 0.5);
+}
+
+.single p{
+    text-align: left;
+}
