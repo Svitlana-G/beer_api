@@ -5,11 +5,6 @@ import { Link } from "react-router-dom";
 class Beer extends Component {
     state = {}
 
-    componentDidMount() {
-        fetch('https://ih-beers-api2.herokuapp.com/beers')
-            .then(response => response.json())
-            .then(json => console.log(json))
-    }
     render() {
         return (
             <div className="ersteSeite">

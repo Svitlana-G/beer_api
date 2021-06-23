@@ -19,8 +19,6 @@ class Beers extends Component {
             .then(json => {
                 this.setState({ data: json, isLoaded: true }, () => console.log(this.state.data))
             })
-
-
     }
 
     render() {
@@ -36,9 +34,7 @@ class Beers extends Component {
                                 <p>Created by: {elem.contributed_by}</p>
                                 <Link to={`/beers/${elem._id}`}>Details</Link>
                             </div>
-
                         </div>)
-
                     : "Loading..."
                 }
                 < Nav />

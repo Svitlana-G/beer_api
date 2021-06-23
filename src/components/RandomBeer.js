@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import Nav from './Nav';
+import { Link } from "react-router-dom";
+import './Randombeer.css'
+
 class RandomBeer extends Component {
     state = {
         data: {},
@@ -12,8 +15,6 @@ class RandomBeer extends Component {
             .then(json => {
                 this.setState({ data: json, isLoaded: true }, () => console.log(this.state.data))
             })
-
-
     }
 
     render() {
@@ -35,6 +36,13 @@ class RandomBeer extends Component {
 
                         <p>{this.state.data.description}</p>
                         {/* {this.state.data.contributed_by} */}
+                        <div id="link">
+                            <Link to="/beer">
+                                <div id="circle-gelb">
+                                    <div>&#11013;</div>
+                                </div>
+                            </Link>
+                        </div>
                     </div>
                     : "Loading..."
                 }

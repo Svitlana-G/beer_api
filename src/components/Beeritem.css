@@ -33,15 +33,18 @@
     background-color: white;
     border: none;
     padding: 0;
+    text-decoration: none;
+    color: white;
 }
 
 .single img{
     text-align: center;
+    height: 25vh;
 }
 
 #link{
     text-align: left;
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 
 

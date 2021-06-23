@@ -7,7 +7,7 @@
     margin: 5vh 5%;
   }
 
-img{
+.all img{
     height: 25vh;
     padding-right: 5%;
 }
@@ -20,7 +20,7 @@ h3{
     color: #FFCA41
 }
 
-a {
+.item a {
     background-color: #FFCA41;
     text-decoration: none;
     color: white;
@@ -30,6 +30,6 @@ a {
 }
 
 
-.all .item:last-of-type{
-    background-color: teal;
+.all:last-of-type{
+    margin-bottom: 15vh;
 }

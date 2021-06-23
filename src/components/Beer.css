@@ -3,7 +3,7 @@
 }
 
 .picture{
-    height: 50vh;
+    height: 60vh;
 }
 
 #rand{
@@ -31,4 +31,5 @@ p{
     background-color: white;
     border: none;
     padding: 0;
+    text-decoration: none;
 }

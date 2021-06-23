@@ -7,7 +7,7 @@ const Nav = () => {
         <div id="nav">
 
             <Link to="/beer">
-                <div id="circle"></div>
+                <img src="/Logo.svg" alt="Nichts" />
             </Link>
 
         </div>
