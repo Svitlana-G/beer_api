@@ -2,10 +2,11 @@
 import React, { Component } from 'react';
 import './Beeritem.css'
 import Nav from './Nav';
+import { Link } from "react-router-dom";
 
 class BeerItem extends Component {
     state = {
-        data: {}
+        data: []
     }
     componentDidMount() {
         // console.log(this.props.match.params.myId)
@@ -15,15 +16,13 @@ class BeerItem extends Component {
         fetch(`https://ih-beers-api2.herokuapp.com/beers/${id}`)
             .then(response => response.json())
             .then(json => {
-                this.setState({ data: json }
-                )
-                console.log(this.state.data)
+                this.setState({ data: json })
             })
     }
 
     render() {
         return (
-            <div>
+            <div id="item">
                 <div className="single">
                     <img src={this.state.data.image_url} alt="" />
                     <h2>{this.state.data.name}</h2>
@@ -39,7 +38,17 @@ class BeerItem extends Component {
 
                     <p>{this.state.data.description}</p>
                     {/* {this.state.data.contributed_by} */}
+                    <div id="link">
+                        <Link to="/beers">
+                            <div id="circle-gelb">
+                                <div>&#11013;</div>
+                            </div>
+                            {/* <img src="icons.png" alt="Nichts" /> */}
+                        </Link>
+                    </div>
                 </div>
+
+
                 <Nav />
             </div>
         );

@@ -8,16 +8,16 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
+import RandomBeer from './components/RandomBeer';
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <div>
-          {/* <nav>
+        {/* <div> */}
+        {/* <nav>
             <ul>
               <li>
                 <Link to="/beer">Beer</Link>
@@ -28,16 +28,16 @@ function App() {
             </ul>
           </nav> */}
 
-          {/* A <Switch> looks through its children <Route>s and
+        {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-          <Switch>
-            <Route path="/beers" component={Beers} exact />
-            <Route path="/beers/:myId" component={BeerItem} />
+        <Switch>
+          <Route path="/beers" component={Beers} exact />
+          <Route path="/beers/random" component={RandomBeer} />
+          <Route path="/beers/:myId" component={BeerItem} />
+          <Route path="/beer" component={Beer} exact />
 
-            <Route path="/beer" component={Beer} exact />
-
-          </Switch>
-        </div>
+        </Switch>
+        {/* </div> */}
       </Router>
     </div>
   );
