@@ -37,7 +37,7 @@ class RandomBeer extends Component {
                         <p>{this.state.data.description}</p>
                         {/* {this.state.data.contributed_by} */}
                         <div id="link">
-                            <Link to="/beer">
+                            <Link to="/">
                                 <div id="circle-gelb">
                                     <div>&#11013;</div>
                                 </div>

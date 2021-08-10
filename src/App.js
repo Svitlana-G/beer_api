@@ -11,11 +11,13 @@ import {
   Route
 } from "react-router-dom";
 import RandomBeer from './components/RandomBeer';
+import Nav from './components/Nav';
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <Nav />
         {/* <div> */}
         {/* <nav>
             <ul>
@@ -34,7 +36,7 @@ function App() {
           <Route path="/beers" component={Beers} exact />
           <Route path="/beers/random" component={RandomBeer} />
           <Route path="/beers/:myId" component={BeerItem} />
-          <Route path="/beer" component={Beer} exact />
+          <Route path="/" component={Beer} exact />
 
         </Switch>
         {/* </div> */}
